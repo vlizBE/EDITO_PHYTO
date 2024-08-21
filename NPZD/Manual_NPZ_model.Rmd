@@ -44,7 +44,7 @@ The ecosystem model for Nutrient, Phytoplankton and Zooplankton was used to simu
 
 This model is useful to describe marine and freshwater systems. The state variables are nutrients, phytoplankton and zooplankton. The workflow focused on a marine system and followed a similar methodology as described in Everaert et al. (2015). Nutrients are defined as the total density of Dissolved Inorganic Nitrogen (DIN), Phosphate (PO~4~) and Silicate (SiO~4~). DIN is defined as the sum of NH~4~, NO~3~ and NO~2~.
 
-![](~/work/NPZD/npzd.jpg)
+![](~/work/EDITO_PHYTO/NPZD/npzd.jpg)
 *Figure 1*. Structure of the NPZD ecological model, with input data (grey ovals) and state variables (blue rectangles). Input data were taken from the LifeWatch Portal and the Flemish Monitoring Network. Generalized Additive Models (GAM) were used to obtain daily data for nutrients based on monthly and seasonal observations from the LifeWatch Portal. GAM were applied for the input data indicated with dash lines.
 
 The changes in the state variables are defined by the flows between variables:
@@ -71,9 +71,9 @@ For calibration and validation:
 
 ## 1.3 Study Area
 
-This workflow is focused on the Belgian part of the North Sea (BPNS; Fig. 2), located in the southern part of the North Sea. The following locations are the selected sampling stations used in the analyses presented in this document. We focused on nearshore, midshore and offshore regions. We analysed one nearshore station (code 130 in the LifeWatch campaings), one midshore (code 330) and seven offshore stations. The offshore stations were grouped to have a sufficient amount of data as the offshore region was sampled seasonnaly, whereas the other regions were sampled monthly.
+This workflow is focused on the Belgian part of the North Sea (BPNS; Fig. 2), located in the southern part of the North Sea. The following locations are the selected sampling stations used in the analyses presented in this document. We focused on nearshore, midshore and offshore regions. We analysed one nearshore station (code 130 in the LifeWatch campaigns), one midshore (code 330) and seven offshore stations. The offshore stations were grouped to have a sufficient amount of data as the offshore region was sampled seasonally, whereas the other regions were sampled monthly.
 
-![](~/work/NPZD/map BPNS.png)
+![](~/work/EDITO_PHYTO/NPZD/map BPNS.png)
 *Figure 2*. Location of the stations of interest in the Belgian Part of the North Sea. The black line indicates the Belgian Exclusive Economic Zone. The nearshore, midshore and offshore are <10km, 10km - 30km and >30km respectively in distance to the coast.
 
 
@@ -107,11 +107,11 @@ dir.create("~/work/NPZD/Output/Final results") # create an subfolderfolder for y
 dir.create("~/work/NPZD/Output/Final results/NPZD") # create an subfolderfolder for your final NPZD results
 dir.create("~/work/NPZD/Output/Final results/Relative contributions") # create an subfolderfolder for your relative contributions results
 ```
-Now, there should be a folder called 'NPZ' in your workspace, containing the subfolder 'Input data','Rscripts' and 'Output'. These subfolder contain subfolders and data or Rscripts. Having these files in our workspace, makes it possible to run the NPZD model.
+Now, there should be a folder called 'NPZ' in your workspace, containing the subfolder 'Input data','Rscripts' and 'Output'. These subfolders contain subfolders and data or Rscripts. Having these files in our workspace, makes it possible to run the NPZD model.
 
 
 ## 2.3 Input Data
-The input data that is required to perform a NPZD model is:
+The input data that is required to perform an NPZD model is:
   1. Sea Surface Temperature (SST) in °C
   2. Nutrients (DIN, PO~4~, SiO~4~) in mmol N m<-3> (or P or Si equivalent)
   3. Threshold values for each parameter per region (provided by region)
